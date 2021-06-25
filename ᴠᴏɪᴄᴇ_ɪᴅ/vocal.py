@@ -43,10 +43,10 @@ class DeathCharm(object):
             pl = f"{emoji.NO_ENTRY}**Playlist yoxdur**"
         else:
             if len(playlist) == 1:
-                pl = f"""✨**Oxunur**✨:\n
+                pl = f"""✨**Çalıyor**✨:\n
 """
             else:
-                pl = f"""✨**Oxunur**✨:\n
+                pl = f"""✨**Çalıyor**✨:\n
 """
             pl += "\n".join([
                 f"**{i}**. **[{x.audio.title}({x.link})**"
@@ -73,7 +73,7 @@ class DeathCharm(object):
         await self.update_start_time()
         # remove old track from playlist
         old_track = playlist.pop(0)
-        print(f"- Oxumağa başladım: {playlist[0].audio.title}")
+        print(f"- Çalmaya başladım: {playlist[0].audio.title}")
         await self.send_playlist()
         os.remove(os.path.join(
             raw_hug,
@@ -122,12 +122,12 @@ async def network_status_changed_handler(ip: GroupCall, is_connected: bool):
     if is_connected:
         ded.chat_id = int("-100" + str(ip.full_chat.id))
         hawk = await ded.send_text(
-            f"✅ **MusicUserBot Onlayndır**\n"
+            f"✅ **MeftunMüzik Çalıyor**\n"
             )     
         await delete_switch_on((hawk,), SWITCH_ON_TIME)              
     else:
         hawk = await ded.send_text(
-            f"❌ **MusicUserBot Offlayndır**\n"
+            f"❌ **MeftunMüzik Çalmıyor**\n"
             )       
         await delete_switch_off((hawk,), SWITCH_OFF_TIME)                       
         ded.chat_id = None
