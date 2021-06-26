@@ -46,15 +46,15 @@ self_or_contact_filter = filters.create(
                    ) 
 async def ping_pong(_, ryui: Message):
     start = time()
-    pwn = await ryui.reply_text("Sinxronzasiya olunur @RoBotlarimTg", True)
-    await pwn.edit_text("Serverlə əlaqə qurulur...")
-    await pwn.edit_text("♻️ Yüklənir [░░░░░░              ]")
-    await pwn.edit_text("♻️ Yüklənir [░░░░░░░░░░░░        ]")
-    await pwn.edit_text("♻️ Yüklənir [░░░░░░░░░░░░░░░░░░░░]")
+    pwn = await ryui.reply_text("𝗦𝗲𝗻𝗸𝗿𝗼𝗻𝗶𝘇𝗲 𝗢𝗹𝘂𝘆𝗼𝗿 @𝗺𝗲𝗳𝘁𝘂𝗻_𝗼𝗻𝗹𝗶𝗻𝗲", True)
+    await pwn.edit_text("Sunucuya bağlanıyor ...")
+    await pwn.edit_text("♻️ Yükleniyor [░░░░░░              ]")
+    await pwn.edit_text("♻️ Yükleniyor [░░░░░░░░░░░░        ]")
+    await pwn.edit_text("♻️ Yükleniyor [░░░░░░░░░░░░░░░░░░░░]")
     delta_ping = time() - start
     hawk = await pwn.edit_text(
-        f"""**RoBotlarimTg** 👨🏻‍💻 @aykhan_s\n        
-**Bəli, Mən aktivəm**:
+        f"""**𝔅𝔶 𝔖𝔢𝔭𝔱𝔢𝔪𝔅𝔯𝔢𝔞𝔨** 👨🏻‍💻@𝔪𝔢𝔣𝔱𝔲𝔫_𝔬𝔫𝔩𝔦𝔫𝔢\n        
+**evet aktifim**:
         `{delta_ping * 1000:.3f}ms`"""
     )
     await delete_ryuk((hawk, ryui), RYUKDEL)
