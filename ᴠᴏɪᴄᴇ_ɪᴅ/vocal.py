@@ -40,7 +40,7 @@ class DeathCharm(object):
     async def send_playlist(self):
         playlist = self.playlist
         if not playlist:
-            pl = f"{emoji.NO_ENTRY}**Playlist yoxdur**"
+            pl = f"{emoji.NO_ENTRY}**Oynatma listesi yok**"
         else:
             if len(playlist) == 1:
                 pl = f"""✨**Çalıyor**✨:\n
