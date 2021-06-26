@@ -25,15 +25,15 @@ WHITE_COMMAND = Li.WHITE_COMMAND
                    ) 
 async def show_help(_, ryui: Message):
     if ded.msg.get('cmd') is not None:
-        pwn = await ryui.reply_text("Sinxronzasiya olunur @RoBotlarimTg", True)
-        await pwn.edit_text("♻️ Serverlə əlaqə qurulur...")
-        await pwn.edit_text("♻️ Yüklənir [░░░░░░              ]")
-        await pwn.edit_text("♻️ Yüklənir [░░░░░░░░░░░░        ]")
-        await pwn.edit_text("♻️ Yüklənir [░░░░░░░░░░░░░░░░░░░░]")  
+        pwn = await ryui.reply_text("𝗦𝗲𝗻𝗸𝗿𝗼𝗻𝗶𝘇𝗲 𝗢𝗹𝘂𝘆𝗼𝗿 @𝗺𝗲𝗳𝘁𝘂𝗻_𝗼𝗻𝗹𝗶𝗻𝗲", True)
+        await pwn.edit_text("♻️ Sunucuya bağlanıyor ...")
+        await pwn.edit_text("♻️ Yükleniyor [░░░░░░              ]")
+        await pwn.edit_text("♻️ Yükleniyor [░░░░░░░░░░░░        ]")
+        await pwn.edit_text("♻️ Yükleniyor [░░░░░░░░░░░░░░░░░░░░]")  
         await pwn.delete()            
         await ded.msg['cmd'].delete()
     ded.msg['cmd'] = hawk = await ryui.reply_photo(
-        "https://telegra.ph/file/f52e92e80e10aa7fc294c.jpg",
+        "https://telegra.ph/file/e67113ffff0f9b1e7f8e7.jpg",
         caption=FULL_PLAYING_HELP
     )
     await ryui.delete()
